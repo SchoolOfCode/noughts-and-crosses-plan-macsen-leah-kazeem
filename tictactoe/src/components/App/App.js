@@ -1,12 +1,10 @@
 import './App.css';
-import Board from '../Board';
-
+import Game from '../Board';
 
 function App() {
   return (
     <div className="App">
-      <p> TEXT </p>
-      <Board/>
+      <Game />
     </div>
   );
 }

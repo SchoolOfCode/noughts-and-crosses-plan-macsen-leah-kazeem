@@ -1,7 +1,7 @@
-export default function Square({ move, value }){
+export default function Square({ onClick, value }){
     return (
         <div>
-            <button onClick={ move }>{ value }</button>
+            <button onClick={ onClick }>{ value }</button>
         </div>
     )
 };
