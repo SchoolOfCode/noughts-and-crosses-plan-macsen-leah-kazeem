@@ -34,13 +34,13 @@ import Square from '../Square';
 //     )
 //     }
 
-const Board = ({ squares, onSelectSquare }) => (
+const Board = ({ box, onSelectSquare }) => (
     <div className="board"> 
-        {squares.map((square, index) => (
+        {box && box.map((value, i) => (
             <Square
-                key={index}
-                value={square}
-                onClick={() => onSelectSquare(index)}
+                key={i}
+                value={value}
+                onClick={() => onSelectSquare(i)}
             />
         ))}
     </div>
